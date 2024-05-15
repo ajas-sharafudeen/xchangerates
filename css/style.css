@@ -34,7 +34,7 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-     height: 100px;
+     height: 120px;
      width: 100%;
      background-color: var(--dark-color);
      color: #fff;
