@@ -14,15 +14,19 @@
 }
 
 .clear {
-	clear: both;
+     clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+:root {
+     --dark-color : #364652;
+     --blue-color : #C7DBE6;
+     --grey-color : #B5BEC6;
+}
 body {
-
+     font-family: "Poppins", sans-serif;
 }
 
 
@@ -30,13 +34,16 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-
-}
-
-footer {
-
+     height: 100px;
+     width: 100%;
+     background-color: var(--dark-color);
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
