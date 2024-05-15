@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Blank Template</title>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convert Currency App</title>
+	<!-- Custom CSS Links -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+<body>
+
+	<header>
+		<h1>Currency Converter</h1>
+	</header>
+	<section class="wrapper">
+		<label for="amount">Amount:</label>
+		<input type="number" id="amount" value="100">
+		<section class="dropdowns">
+			<select id="from-currency-select"></select>
+			<select id="to-currency-select"></select>
+		</section>
+		<button id="convert-button">Convert</button>
+	</section>
+	
+	<!-- Script With Array of Supported Country Codes -->
+	<script src="currency-codes.js"></script>
+	<!-- Script With API Key -->
+	<script src="api-key.js"></script>
+	<!-- Script -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
